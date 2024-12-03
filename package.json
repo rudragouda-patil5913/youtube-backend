@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "youtube-backend project for practice",
   "main": "src/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "nodemon src/index.js"
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
   },
   "keywords": [
     "express",
@@ -20,6 +22,9 @@
     "prettier": "^3.4.1"
   },
   "dependencies": {
-    "dotenv": "^16.4.6"
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.6",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.3"
   }
 }
